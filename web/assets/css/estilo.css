@@ -1,0 +1,84 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/05/2016, 19:48:35
+    Author     : ander
+*/
+
+.texto-cuerpo{
+    color: #333333;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Con esto pondremos el fondo del DIV negro y 30% de transparente y la letra verde con 80% de transparencia */
+.mi-caption{
+
+    color:rgba(255,255,255,0.8);
+    background:rgba(0,0,0,0.8);
+    margin-left: -18.1em;
+    margin-right: -18.1em;
+    -border-radius: 5px 10px;
+    -moz-border-radius: 5px 10px;
+    -webkit-border-radius: 5px 10px;
+}
+/* unvisited link */
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #b9def0;
+    text-decoration:none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+} 
+
+.divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-left: 1px solid #F2F2F2;
+    border-right: 1px solid #FFF;
+}
+
+/*Clases para girar los elementos */
+
+
+#rotar{
+    transition: 1s ease;
+    -moz-transition: 1s ease; /* Firefox */
+    -webkit-transition: 1s ease; /* Chrome - Safari */
+    -o-transition: 1s ease; /* Opera */
+}
+
+#rotar:hover{
+    transform : rotate(360deg);
+    -moz-transform : rotate(360deg); /* Firefox */
+    -webkit-transform : rotate(360deg); /* Chrome - Safari */
+    -o-transform : rotate(360deg); /* Opera */
+}
+
+.girar {
+    transition: 1s ease;
+    -moz-transition: 1s ease; /* Firefox */
+    -webkit-transition: 1s ease; /* Chrome - Safari */
+    -o-transition: 1s ease; /* Opera */
+}
+.girar:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+

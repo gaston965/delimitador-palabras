@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jsf="http://xmlns.jcp.org/jsf"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      ng-app="counterApp"
+      >
+<!--    <script language="JavaScript" type="text/javascript">
+            function click(){
+            if(event.button==2){
+            alert(' Tu modificas este alerta');
+            }
+            }
+            document.onmousedown=click
+            //-->
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/prueba.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
+        <script src="assets/js/contarPalabras.js" type="text/javascript"></script>
+        <!-- Todo lo que agregues externo debe ir dentro del head -->
+    </h:head>
+    <h:body  >
+        <div class="container">
+        <h:form class="form-horizontal">
+              <div class="form-group" ng-controller="counterCtrl">
+                                    <div class="">
+                                        <label class="control-label col-md-2" >Numero de Legajo</label>
+                                        <div class="col-md-10">
+<!--                                            <input type="text" class="form-control "  jsf:id="IDNUMERODELEGAJO" jsf:value="#{aluC.alumnoActual.nroLeg}"  jsf:required="true" jsf:requiredMessage="Complete el campo legajo, campo obligatorio"   placeholder="Legajo-Alumno" /> 
+                                            <h:message class="error alert-danger" for="IDNUMERODELEGAJO"   />-->
+                                            <textarea  id="text_max_1" class="form-control count[50,60]"  />
+                                            <!--<h3>{{total_in.length}}</h3>-->
+                                        </div>	
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="">
+                                        <label class="control-label col-md-2" >Dni</label>
+                                        <div class="col-md-10">
+                                            <!--                                        <input type="text" class="form-control" jsf:id="IDDNI" jsf:required='true' jsf:requiredMessage='Complete el campo DNI-Alumno,campo obligatorio' placeholder="DNI-Alumno"/>-->
+                                            <h:inputText class="form-control "   id="IDDNI" required='true'  requiredMessage='Complete el campo DNI-Alumno,campo obligatorio' p:placeholder="DNI-Alumno"     ></h:inputText>
+                                            <h:message class="error alert-danger" for="IDDNI"   />
+                                        </div>	
+                                    </div>
+                                </div>
+        </h:form>
+     </div> 
+    </h:body>
+</html>
